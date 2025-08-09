@@ -5,31 +5,97 @@
   <title>Blog - MangaArt</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Bangers', cursive;
+      font-size: 2.5em;
+      color: #e63946;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .article {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 5px solid #e63946;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+      position: relative;
+    }
+
+    .article h3 {
+      margin-bottom: 10px;
+      color: #e63946;
+    }
+
+    .excerpt {
+      font-style: italic;
+      color: #555;
+    }
+
+    .full-text {
+      margin-top: 15px;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .full-text.visible {
+      opacity: 1;
+      max-height: 500px;
+    }
+
+    .toggle-btn {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .toggle-btn:hover {
+      background-color: #d62839;
+    }
+
+    .toggle-btn .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .toggle-btn.open .arrow {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 <body>
-  <header>
- <ul class="menu">
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="galerie.html">Galerie</a></li>
-  <li><a href="boutique.html">Boutique</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="forum.html">Forum</a></li>
-</ul>
 
-  </header>
-
-<main>
   <h2>Blog</h2>
 
   <div class="article">
     <h3>Comment je crée mes personnages</h3>
     <p class="excerpt">Je vous explique comment je développe mes personnages, de l’esquisse à la mise en couleur...</p>
-   <button class="toggle-btn" onclick="toggleArticle(this)">
-  <span class="label">Lire plus</span>
-  <span class="arrow">▼</span>
-</button>
-    <div class="full-text hidden">
+    <button class="toggle-btn" onclick="toggleArticle(this)">
+      <span class="label">Lire plus</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="full-text">
       <p>Je commence toujours par une idée vague : une émotion, une posture, un regard. Ensuite je fais plusieurs croquis rapides pour capturer l’énergie du personnage. Une fois que j’ai trouvé la bonne silhouette, je travaille les détails : vêtements, accessoires, expressions. Enfin, je passe à la mise en couleur avec des tons qui reflètent sa personnalité.</p>
     </div>
   </div>
@@ -37,39 +103,31 @@
   <div class="article">
     <h3>Mes inspirations manga</h3>
     <p class="excerpt">Voici les œuvres qui m’ont influencé dans mon style et mes choix artistiques...</p>
-  <button class="toggle-btn" onclick="toggleArticle(this)">
-  <span class="label">Lire plus</span>
-  <span class="arrow">▼</span>
-</button>
-    <div class="full-text hidden">
+    <button class="toggle-btn" onclick="toggleArticle(this)">
+      <span class="label">Lire plus</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="full-text">
       <p>Je suis très inspiré par des classiques comme Naruto, Bleach et One Piece, mais aussi par des œuvres plus récentes comme Jujutsu Kaisen ou Chainsaw Man. Ce que j’aime, c’est la manière dont les auteurs utilisent les codes visuels pour transmettre des émotions fortes. Je m’en inspire pour créer mes propres univers.</p>
     </div>
   </div>
-</main>
 
-  <footer>
-    <p>&copy; 2025 Simon - Tous droits réservés</p>
-  </footer>
+  <script>
+    function toggleArticle(button) {
+      const fullText = button.nextElementSibling;
+      const label = button.querySelector('.label');
+      const arrow = button.querySelector('.arrow');
+
+      fullText.classList.toggle('visible');
+      button.classList.toggle('open');
+
+      if (fullText.classList.contains('visible')) {
+        label.textContent = "Lire moins";
+      } else {
+        label.textContent = "Lire plus";
+      }
+    }
+  </script>
+
 </body>
 </html>
-
-<script>
-  function toggleArticle(button) {
-  const fullText = button.nextElementSibling;
-  const label = button.querySelector('.label');
-  const arrow = button.querySelector('.arrow');
-
-  if (fullText.classList.contains('hidden')) {
-    fullText.classList.remove('hidden');
-    label.textContent = "Lire moins";
-    button.classList.add('open');
-  } else {
-    fullText.classList.add('hidden');
-    label.textContent = "Lire plus";
-    button.classList.remove('open');
-  }
-}
-</script>
-
-
-
