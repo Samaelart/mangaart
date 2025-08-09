@@ -25,7 +25,10 @@
   <div class="article">
     <h3>Comment je crée mes personnages</h3>
     <p class="excerpt">Je vous explique comment je développe mes personnages, de l’esquisse à la mise en couleur...</p>
-    <button onclick="toggleArticle(this)">Lire plus</button>
+   <button class="toggle-btn" onclick="toggleArticle(this)">
+  <span class="label">Lire plus</span>
+  <span class="arrow">▼</span>
+</button>
     <div class="full-text hidden">
       <p>Je commence toujours par une idée vague : une émotion, une posture, un regard. Ensuite je fais plusieurs croquis rapides pour capturer l’énergie du personnage. Une fois que j’ai trouvé la bonne silhouette, je travaille les détails : vêtements, accessoires, expressions. Enfin, je passe à la mise en couleur avec des tons qui reflètent sa personnalité.</p>
     </div>
@@ -34,7 +37,10 @@
   <div class="article">
     <h3>Mes inspirations manga</h3>
     <p class="excerpt">Voici les œuvres qui m’ont influencé dans mon style et mes choix artistiques...</p>
-    <button onclick="toggleArticle(this)">Lire plus</button>
+  <button class="toggle-btn" onclick="toggleArticle(this)">
+  <span class="label">Lire plus</span>
+  <span class="arrow">▼</span>
+</button>
     <div class="full-text hidden">
       <p>Je suis très inspiré par des classiques comme Naruto, Bleach et One Piece, mais aussi par des œuvres plus récentes comme Jujutsu Kaisen ou Chainsaw Man. Ce que j’aime, c’est la manière dont les auteurs utilisent les codes visuels pour transmettre des émotions fortes. Je m’en inspire pour créer mes propres univers.</p>
     </div>
@@ -59,4 +65,5 @@
     }
   }
 </script>
+
 
