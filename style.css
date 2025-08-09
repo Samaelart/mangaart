@@ -451,12 +451,13 @@ footer {
 }
 .hero-banner {
   text-align: center;
-  padding: 20px 10px; /* Réduction de l’espace vertical */
+  padding: 20px 10px;
+  margin-bottom: 40px;
 }
 
 .banner-image {
   width: 100%;
-  max-width: 400px; /* Réduction de la largeur max */
+  max-width: 400px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -464,14 +465,19 @@ footer {
 }
 
 .banner-title {
-  font-size: 2em; /* Taille du titre réduite */
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  color: #e63946;
   margin-bottom: 8px;
 }
 
 .slogan {
-  font-size: 1em; /* Slogan plus discret */
+  font-style: italic;
+  font-size: 1em;
   color: #666;
+  margin-top: 10px;
 }
+
 
 
 
