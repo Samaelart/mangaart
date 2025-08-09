@@ -224,18 +224,6 @@ footer {
   }
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.hero h2 {
-  font-family: 'Bangers', cursive;
-  font-size: 2.5em;
-  margin-top: 20px;
-  color: #e63946;
-}
-
 .slogan {
   font-style: italic;
   color: #555;
@@ -469,6 +457,7 @@ footer {
   color: #666;
   margin-top: 10px;
 }
+
 
 
 
