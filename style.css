@@ -449,6 +449,30 @@ footer {
 .avatar:hover {
   transform: scale(1.05);
 }
+.hero-banner {
+  text-align: center;
+  padding: 20px 10px; /* Réduction de l’espace vertical */
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 400px; /* Réduction de la largeur max */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.banner-title {
+  font-size: 2em; /* Taille du titre réduite */
+  margin-bottom: 8px;
+}
+
+.slogan {
+  font-size: 1em; /* Slogan plus discret */
+  color: #666;
+}
+
 
 
 
