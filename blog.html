@@ -55,15 +55,21 @@
 
 <script>
   function toggleArticle(button) {
-    const fullText = button.nextElementSibling;
-    if (fullText.classList.contains('hidden')) {
-      fullText.classList.remove('hidden');
-      button.textContent = "Lire moins";
-    } else {
-      fullText.classList.add('hidden');
-      button.textContent = "Lire plus";
-    }
+  const fullText = button.nextElementSibling;
+  const label = button.querySelector('.label');
+  const arrow = button.querySelector('.arrow');
+
+  if (fullText.classList.contains('hidden')) {
+    fullText.classList.remove('hidden');
+    label.textContent = "Lire moins";
+    button.classList.add('open');
+  } else {
+    fullText.classList.add('hidden');
+    label.textContent = "Lire plus";
+    button.classList.remove('open');
   }
+}
 </script>
+
 
 
