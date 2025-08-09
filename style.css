@@ -430,14 +430,27 @@ footer {
   display: none;
 }
 
-.avatar {
-  width: 120px;         /* Taille réduite */
-  height: 120px;
-  border-radius: 50%;   /* Rend l’image parfaitement ronde */
-  object-fit: cover;    /* Coupe proprement si l’image n’est pas carrée */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Optionnel : ombre douce */
-  margin-bottom: 20px;
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+
 
 
 
