@@ -17,7 +17,22 @@
   </style>
 </head>
 <body>
-
+   <header>
+ <div class="navbar">
+    <div class="logo">MangaArt</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="galerie.html">Galerie</a></li>
+  <li><a href="boutique.html">Boutique</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="forum.html">Forum</a></li>
+</ul>
+  </div>
+  </header>
+<main>
   <h2>Créer un nouveau sujet</h2>
   <input type="text" id="pseudo" placeholder="Votre pseudo">
   <input type="text" id="topicTitle" placeholder="Titre du sujet">
@@ -35,7 +50,7 @@
 <div id="forum"></div>
 
   <div id="forum"></div>
-
+</main>
   <script>
     let topics = JSON.parse(localStorage.getItem("topics")) || [];
 
@@ -161,3 +176,4 @@ function displayTopics() {
 
 </body>
 </html>
+
