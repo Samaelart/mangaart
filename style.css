@@ -481,11 +481,12 @@ footer {
 }
 
 
-#competences {
+article.competences {
   background-color: transparent; 
   color: black;
   text-align: center;
 }
+
 
 
 
