@@ -68,7 +68,7 @@ main h2 {
 }
 
 .galerie img {
-  width: 100%;
+  width: 50%;
   border-radius: 12px;
   border: 3px solid #e63946;
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
@@ -478,6 +478,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 
 
 
