@@ -493,8 +493,7 @@ article.competences h3 {
   color: black;
 }
 
-<style>
-  .zoomable {
+zoomable {
     transition: transform 0.3s ease;
     cursor: pointer;
   }
@@ -502,9 +501,9 @@ article.competences h3 {
   .zoomable:active {
     transform: scale(2); /* Agrandit l’image au clic */
   }
-</style>
 
-<img src="images/Pending.png" class="zoomable" alt="Pending" width="300">
+<img src="images/Pending.png" class="zoomable" alt="Pending" width="900">
+
 
 
 
