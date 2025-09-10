@@ -80,6 +80,17 @@ main h2 {
   transform: scale(1.08);
 }
 
+.galerie {
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  gap: 20px; /* Espacement entre les images */
+}
+
+.galerie img {
+  max-width: 45%; /* Ajuste la taille selon la largeur disponible */
+  height: auto;
+}
+
 /* PRODUITS */
 .produits {
   display: flex;
@@ -503,6 +514,7 @@ zoomable {
   }
 
 <img src="images/Pending.png" class="zoomable" alt="Pending" width="900">
+
 
 
 
