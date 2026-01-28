@@ -196,6 +196,113 @@ footer {
   main { padding: 30px 16px; }
 }
 
+/* ===== Actions figcaption (zoom + fiche) ===== */
+.galerie figcaption .actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.btn-zoom,
+.btn-details {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--red);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.btn-details { background: #1f1f1f; border: 1px solid var(--red); }
+
+.btn-zoom:hover,
+.btn-details:hover { transform: translateY(-1px); filter: brightness(1.06); }
+
+/* ===== Lightbox (CSS-only avec :target) ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 2000;
+  padding: 24px;
+}
+.lightbox:target { display: flex; }
+
+.lightbox img {
+  max-width: min(92vw, 1400px);
+  max-height: 88vh;
+  object-fit: contain;
+  border: 3px solid var(--red);
+  border-radius: 12px;
+  box-shadow: 0 20px 44px rgba(0,0,0,0.6);
+}
+
+/* Zone cliquable pour fermer (clic en dehors de l’image) */
+.lightbox .lightbox-bg {
+  position: absolute;
+  inset: 0;
+}
+
+/* Bouton fermer (coin supérieur droit) */
+.lightbox .lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+/* Lien "Fiche de l'œuvre" sous l'image */
+.lightbox .lightbox-details {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: var(--red);
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* Navigation prev/next dans la lightbox */
+.lightbox .lightbox-nav a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 1;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.6);
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.lightbox .prev { left: 18px; }
+.lightbox .next { right: 18px; }
+
+@media (max-width: 480px) {
+  .lightbox .lightbox-details { bottom: 14px; font-size: 0.9rem; }
+  .lightbox .lightbox-close { top: 14px; right: 16px; }
+}
+
 
 
 
