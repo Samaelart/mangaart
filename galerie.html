@@ -1,83 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galerie – MangaArt</title>
-
-  <!-- Polices Google (optimisation avec preconnect) -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet" />
-
-  <!-- Feuille de style -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Galerie - MangaArt</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <a class="logo" href="index.html" aria-label="Retour à l’accueil">Samael Art</a>
+<header>
+  <div class="navbar">
+    <div class="logo">Samael Art</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="menu">
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="galerie.html">Galerie</a></li>
+  <li><a href="boutique.html">Boutique</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="apropos.html">A propos de moi</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+  </div>
+</header>
 
-      <!-- Menu burger (checkbox hack) -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
-      <label for="menu-toggle" class="menu-icon" aria-label="Ouvrir/fermer le menu" aria-controls="primary-menu">
-        &#9776;
-      </label>
-
-      <ul id="primary-menu" class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="galerie.html" aria-current="page">Galerie</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="apropos.html">À propos de moi</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="content">
-    <h1 class="page-title">Galerie de dessins</h1>
-
-    <!-- Utilisation de figure/figcaption pour sémantique et accessibilité -->
-    <section class="galerie" aria-label="Galerie d’illustrations">
-      <figure class="galerie-item">
-        <img
-          src="images/Pending.png"
-          alt="Illustration en attente – croquis de personnage manga"
-          loading="lazy"
-          width="800" height="800"
-        />
-        <figcaption>Illustration en cours – croquis manga</figcaption>
-      </figure>
-
-      <figure class="galerie-item">
-        <img
-          src="images/Illustration.jpg"
-          alt="Illustration manga – personnage en pose dynamique"
-          loading="lazy"
-          width="1200" height="800"
-        />
-        <figcaption>Personnage – pose dynamique</figcaption>
-      </figure>
-
-      <figure class="galerie-item">
-        <img
-          src="images/Illustration2.jpg"
-          alt="Illustration manga – portrait stylisé"
-          loading="lazy"
-          width="1200" height="800"
-        />
-        <figcaption>Portrait stylisé</figcaption>
-      </figure>
-    </section>
+  <main>
+    <h2>Galerie de dessins</h2>
+    <div class="galerie">
+      <img src="images/Pending.png" alt="Dessin manga 1">
+      <img src="images/Illustration.jpg" alt="Dessin manga 2">
+      <img src="images/Illustration2.jpg" alt="Dessin manga 3">
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Simon — Tous droits réservés</p>
+  <footer>
+    <p>&copy; 2025 Simon - Tous droits réservés</p>
   </footer>
-
-  <noscript>
-    <p>Le menu responsive nécessite JavaScript ou CSS avancé. Si vous ne pouvez pas l’utiliser, vous pouvez naviguer via les liens de bas de page.</p>
-  </noscript>
 </body>
+
 </html>
