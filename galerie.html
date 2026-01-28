@@ -30,45 +30,101 @@
   </header>
 
   <main>
-    <h2>Galerie de dessins</h2>
+  <h2>Galerie de dessins</h2>
 
-    <!-- Galerie : simple, responsive, performante -->
-    <div class="galerie">
-      <figure class="art">
-        <img
-          src="images/Pending.png"
-          alt="Illustration en cours - style manga"
-          loading="lazy"
-          decoding="async"
-        />
-        <figcaption>Work in progress — 2025</figcaption>
-      </figure>
+  <!-- ID utile pour fermer les lightbox avec href="#" -->
+  <div class="galerie" id="galerie">
+    <!-- Œuvre 1 -->
+    <figure class="art">
+      <img
+        src="images/Pending.png"
+        alt="Illustration en cours — personnage manga"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption>
+        <span class="title">Work in progress — 2025</span>
+        <div class="actions">
+          <a class="btn-zoom" href="#img1" aria-label="Voir en grand">🔍 Zoom</a>
+          <a class="btn-details" href="oeuvres/pending.html">📄 Fiche</a>
+        </div>
+      </figcaption>
+    </figure>
 
-      <figure class="art">
-        <img
-          src="images/Illustration.jpg"
-          alt="Illustration couleur personnage manga"
-          loading="lazy"
-          decoding="async"
-        />
-        <figcaption>Illustration — Couleur</figcaption>
-      </figure>
+    <!-- Œuvre 2 -->
+    <figure class="art">
+      <img
+        src="images/Illustration.jpg"
+        alt="Illustration manga — version couleur"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption>
+        <span class="title">Illustration — Couleur</span>
+        <div class="actions">
+          <a class="btn-zoom" href="#img2" aria-label="Voir en grand">🔍 Zoom</a>
+          <a class="btn-details" href="oeuvres/illustration.html">📄 Fiche</a>
+        </div>
+      </figcaption>
+    </figure>
 
-      <figure class="art">
-        <img
-          src="images/Illustration2.jpg"
-          alt="Illustration manga alternative"
-          loading="lazy"
-          decoding="async"
-        />
-        <figcaption>Illustration — Variation</figcaption>
-      </figure>
-    </div>
-  </main>
+    <!-- Œuvre 3 -->
+    <figure class="art">
+      <img
+        src="images/Illustration2.jpg"
+        alt="Illustration manga — variation"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption>
+        <span class="title">Illustration — Variation</span>
+        <div class="actions">
+          <a class="btn-zoom" href="#img3" aria-label="Voir en grand">🔍 Zoom</a>
+          <a class="btn-details" href="oeuvres/illustration-variation.html">📄 Fiche</a>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- Lightbox overlays (CSS-only via :target) -->
+  <div id="img1" class="lightbox" role="dialog" aria-modal="true" aria-label="Work in progress — 2025">
+    <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+    <img src="images/Pending.png" alt="Work in progress — plein écran" />
+    <nav class="lightbox-nav">
+      <a href="#img3" class="prev" aria-label="Précédent">‹</a>
+      <a href="#img2" class="next" aria-label="Suivant">›</a>
+    </nav>
+    <a class="lightbox-close" href="#" aria-label="Fermer">✕</a>
+    <a class="lightbox-details" href="oeuvres/pending.html">📄 Fiche de l’œuvre</a>
+  </div>
+
+  <div id="img2" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Couleur">
+    <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+    <img src="images/Illustration.jpg" alt="Illustration — Couleur en plein écran" />
+    <nav class="lightbox-nav">
+      <a href="#img1" class="prev" aria-label="Précédent">‹</a>
+      <a href="#img3" class="next" aria-label="Suivant">›</a>
+    </nav>
+    <a class="lightbox-close" href="#" aria-label="Fermer">✕</a>
+    <a class="lightbox-details" href="oeuvres/illustration.html">📄 Fiche de l’œuvre</a>
+  </div>
+
+  <div id="img3" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Variation">
+    <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+    <img src="images/Illustration2.jpg" alt="Illustration — Variation en plein écran" />
+    <nav class="lightbox-nav">
+      <a href="#img2" class="prev" aria-label="Précédent">‹</a>
+      <a href="#img1" class="next" aria-label="Suivant">›</a>
+    </nav>
+    <a class="lightbox-close" href="#" aria-label="Fermer">✕</a>
+    <a class="lightbox-details" href="oeuvres/illustration-variation.html">📄 Fiche de l’œuvre</a>
+  </div>
+</main>
 
   <footer>
     <p>&copy; 2025 Simon - Tous droits réservés</p>
   </footer>
 </body>
 </html>
+
 
