@@ -1,92 +1,126 @@
+/* ====== Base & Polices ====== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('images/fond-japonais.png') repeat;
+  background-size: 300px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Galerie – MangaArt</title>
+/* ====== HEADER ====== */
+header {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 5px solid #e63946;
+}
 
-  <!-- Polices Google (optimisation avec preconnect) -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet" />
+header h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 3em;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 2px 2px #e63946;
+}
 
-  <!-- Feuille de style -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navigation principale">
-      <a class="logo" href="index.html" aria-label="Retour à l’accueil">Samael Art</a>
+/* ====== NAVIGATION ====== */
+nav {
+  margin-top: 15px;
+}
 
-      <!-- Menu burger (checkbox hack) -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
-      <label for="menu-toggle" class="menu-icon" aria-label="Ouvrir/fermer le menu" aria-controls="primary-menu">
-        &#9776;
-      </label>
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
 
-      <ul id="primary-menu" class="menu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="galerie.html" aria-current="page">Galerie</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="apropos.html">À propos de moi</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+nav a:hover {
+  color: #e63946;
+  text-shadow: 1px 1px #fff;
+}
 
-  <main id="content">
-    <h1 class="page-title">Galerie de dessins</h1>
+/* ====== MAIN ====== */
+main {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
 
-    <!-- Utilisation de figure/figcaption pour sémantique et accessibilité -->
-    <section class="galerie" aria-label="Galerie d’illustrations">
-      <figure class="galerie-item">
-        <img
-          src="images/Pending.png"
-          alt="Illustration en attente – croquis de personnage manga"
-          loading="lazy"
-          width="800" height="800"
-        />
-        <figcaption>Illustration en cours – croquis manga</figcaption>
-      </figure>
+main h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 2.5em;
+  color: #e63946;
+  margin-bottom: 30px;
+}
 
-      <figure class="galerie-item">
-        <img
-          src="images/Illustration.jpg"
-          alt="Illustration manga – personnage en pose dynamique"
-          loading="lazy"
-          width="1200" height="800"
-        />
-        <figcaption>Personnage – pose dynamique</figcaption>
-      </figure>
+/* ====== GALERIE ====== */
+/* Unifiée en grid (suppression du conflit avec flex) */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
 
-      <figure class="galerie-item">
-        <img
-          src="images/Illustration2.jpg"
-          alt="Illustration manga – portrait stylisé"
-          loading="lazy"
-          width="1200" height="800"
-        />
-        <figcaption>Portrait stylisé</figcaption>
-      </figure>
-    </section>
-  </main>
+.galerie img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #e63946;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  display: block;
+}
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Simon — Tous droits réservés</p>
-  </footer>
+.galerie img:hover {
+  transform: scale(1.08);
+}
 
-  <noscript>
-    <p>Le menu responsive nécessite JavaScript ou CSS avancé. Si vous ne pouvez pas l’utiliser, vous pouvez naviguer via les liens de bas de page.</p>
-  </noscript>
-</body>
-</html>
+/* ====== PRODUITS ====== */
+.produits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
+.produit {
+  width: 250px;
+  background-color: #fff;
+  border: 2px solid #e63946;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
 
+.produit:hover {
+  transform: translateY(-5px);
+}
 
+.produit img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
+/* ====== FORMULAIRE ====== */
+form {
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+}
 
+form label {
+  font-weight: bold;
+}
 
 
 
