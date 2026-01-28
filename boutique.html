@@ -1,117 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Boutique - MangaArt</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-<header>
-  <div class="navbar">
-    <div class="logo">Samael Art</div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-   <ul class="menu">
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="galerie.html">Galerie</a></li>
-  <li><a href="boutique.html">Boutique</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="apropos.html">A propos de moi</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+  <header>
+    <div class="navbar">
+      <div class="logo">Samael Art</div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="boutique.html" class="active">Boutique</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="apropos.html">A propos de moi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  </div>
-</header>
- <main>
-  <h2>Boutique</h2>
-  <p>Voici quelques œuvres disponibles à la vente :</p>
+  <main>
+    <h2>Boutique</h2>
+    <p>Voici quelques œuvres disponibles à la vente :</p>
 
-  <div class="produits">
-    <!-- Produit 1 -->
-    <article class="produit">
-      #img-pendingimages/Pending.png" 
-             alt="Work in progress — impression A4" 
-             loading="lazy" decoding="async" width="900" height="1200">
-      <div class="prod-info">
-        <h3 class="prod-title">Work in progress</h3>
-        <p class="prod-format">Format : A4 (210×297 mm)</p>
-        <p class="prod-price">Prix : 15 €</p>
-      </div>
-      <div class="prod-actions">
-        oeuvres/pending.htmlDétails</a>
-        index.html#contactAcheter</a>
-        #img-pending🔍 Zoom</a>
-      </div>
-    </article>
+    <div class="produits">
+      <!-- Produit 1 -->
+      <article class="produit">
+        <img
+          src="images/Pending.png"
+          alt="Work in progress — impression A4"
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="1200"
+        />
+        <div class="prod-info">
+          <h3 class="prod-title">Work in progress</h3>
+          <p class="prod-format">Format : A4 (210×297 mm)</p>
+          <p class="prod-price">Prix : 15 €</p>
+        </div>
+        <div class="prod-actions">
+          <a class="btn-details" href="oeuvres/pending.html">Détails</a>
+          <a class="btn-buy" href="index.html#contact">Acheter</a>
+          <a class="btn-zoom" href="#img-pending">🔍 Zoom</a>
+        </div>
+      </article>
 
-    <!-- Produit 2 -->
-    <article class="produit">
-      #img-illus1images/Illustration.jpg" 
-             alt="Illustration couleur — impression A4" 
-             loading="lazy" decoding="async" width="900" height="1200">
-      <div class="prod-info">
-        <h3 class="prod-title">Illustration — Couleur</h3>
-        <p class="prod-format">Format : A4 (210×297 mm)</p>
-        <p class="prod-price">Prix : 20 €</p>
-      </div>
-      <div class="prod-actions">
-        oeuvres/illustration.htmlDétails</a>
-        index.html#contactAcheter</a>
-        #img-illus1🔍 Zoom</a>
-      </div>
-    </article>
+      <!-- Produit 2 -->
+      <article class="produit">
+        <img
+          src="images/Illustration.jpg"
+          alt="Illustration couleur — impression A4"
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="1200"
+        />
+        <div class="prod-info">
+          <h3 class="prod-title">Illustration — Couleur</h3>
+          <p class="prod-format">Format : A4 (210×297 mm)</p>
+          <p class="prod-price">Prix : 20 €</p>
+        </div>
+        <div class="prod-actions">
+          <a class="btn-details" href="oeuvres/illustration.html">Détails</a>
+          <a class="btn-buy" href="index.html#contact">Acheter</a>
+          <a class="btn-zoom" href="#img-illus1">🔍 Zoom</a>
+        </div>
+      </article>
 
-    <!-- Produit 3 -->
-    <article class="produit">
-      #img-illus2images/Illustration2.jpg" 
-             alt="Illustration variation — impression A4" 
-             loading="lazy" decoding="async" width="900" height="1200">
-      <div class="prod-info">
-        <h3 class="prod-title">Illustration — Variation</h3>
-        <p class="prod-format">Format : A4 (210×297 mm)</p>
-        <p class="prod-price">Prix : 20 €</p>
-      </div>
-      <div class="prod-actions">
-        oeuvres/illustration-variation.htmlDétails</a>
-        index.html#contactAcheter</a>
-        #img-illus2🔍 Zoom</a>
-      </div>
-    </article>
-  </div>
+      <!-- Produit 3 -->
+      <article class="produit">
+        <img
+          src="images/Illustration2.jpg"
+          alt="Illustration variation — impression A4"
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="1200"
+        />
+        <div class="prod-info">
+          <h3 class="prod-title">Illustration — Variation</h3>
+          <p class="prod-format">Format : A4 (210×297 mm)</p>
+          <p class="prod-price">Prix : 20 €</p>
+        </div>
+        <div class="prod-actions">
+          <a class="btn-details" href="oeuvres/illustration-variation.html">Détails</a>
+          <a class="btn-buy" href="index.html#contact">Acheter</a>
+          <a class="btn-zoom" href="#img-illus2">🔍 Zoom</a>
+        </div>
+      </article>
+    </div>
 
-  <!-- Lightbox (CSS-only) pour la Boutique -->
-  <div id="img-pending" class="lightbox" role="dialog" aria-modal="true" aria-label="Work in progress — Zoom">
-    #</a>
-    images/Pending.png
-    #✕</a>
-    oeuvres/pending.html📄 Fiche de l’œuvre</a>
-  </div>
+    <!-- Lightbox (CSS-only) pour la Boutique -->
+    <div id="img-pending" class="lightbox" role="dialog" aria-modal="true" aria-label="Work in progress — Zoom">
+      <!-- Clic hors de l’image pour fermer -->
+      <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+      <img src="images/Pending.png" alt="Work in progress — vue agrandie" />
+      <a href="#" class="lightbox-close" title="Fermer">✕</a>
+      <a href="oeuvres/pending.html" class="lightbox-details">📄 Fiche de l’œuvre</a>
+    </div>
 
-  <div id="img-illus1" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Couleur — Zoom">
-    #</a>
-    images/Illustration.jpg
-    #✕</a>
-    oeuvres/illustration.html📄 Fiche de l’œuvre</a>
-  </div>
+    <div id="img-illus1" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Couleur — Zoom">
+      <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+      <img src="images/Illustration.jpg" alt="Illustration couleur — vue agrandie" />
+      <a href="#" class="lightbox-close" title="Fermer">✕</a>
+      <a href="oeuvres/illustration.html" class="lightbox-details">📄 Fiche de l’œuvre</a>
+    </div>
 
-  <div id="img-illus2" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Variation — Zoom">
-    #</a>
-    images/Illustration2.jpg
-    #✕</a>
-    oeuvres/illustration-variation.html📄 Fiche de l’œuvre</a>
-  </div>
-
-</main>
+    <div id="img-illus2" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Variation — Zoom">
+      <a href="#" class="lightbox-bg" aria-label="Fermer"></a>
+      <img src="images/Illustration2.jpg" alt="Illustration variation — vue agrandie" />
+      <a href="#" class="lightbox-close" title="Fermer">✕</a>
+      <a href="oeuvres/illustration-variation.html" class="lightbox-details">📄 Fiche de l’œuvre</a>
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Simon - Tous droits réservés</p>
   </footer>
 </body>
-
 </html>
-
-
 
 
 
