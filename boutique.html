@@ -23,22 +23,86 @@
 
   </div>
 </header>
-  <main>
-    <h2>Boutique</h2>
-    <p>Voici quelques œuvres disponibles à la vente :</p>
-      <div class="produit">
-        <img src="images/Pending.png" alt="Print manga">
-        <p>Print - A4</p>
+ <main>
+  <h2>Boutique</h2>
+  <p>Voici quelques œuvres disponibles à la vente :</p>
+
+  <div class="produits">
+    <!-- Produit 1 -->
+    <article class="produit">
+      #img-pendingimages/Pending.png" 
+             alt="Work in progress — impression A4" 
+             loading="lazy" decoding="async" width="900" height="1200">
+      <div class="prod-info">
+        <h3 class="prod-title">Work in progress</h3>
+        <p class="prod-format">Format : A4 (210×297 mm)</p>
+        <p class="prod-price">Prix : 15 €</p>
       </div>
-     <div class="produit">
-        <img src="images/Illustration.jpg" alt="Print manga">
-        <p>Print - A4</p>
+      <div class="prod-actions">
+        oeuvres/pending.htmlDétails</a>
+        index.html#contactAcheter</a>
+        #img-pending🔍 Zoom</a>
       </div>
-     <div class="produit">
-        <img src="images/Illustration2.jpg" alt="Print manga">
-        <p>Print - A4</p>
+    </article>
+
+    <!-- Produit 2 -->
+    <article class="produit">
+      #img-illus1images/Illustration.jpg" 
+             alt="Illustration couleur — impression A4" 
+             loading="lazy" decoding="async" width="900" height="1200">
+      <div class="prod-info">
+        <h3 class="prod-title">Illustration — Couleur</h3>
+        <p class="prod-format">Format : A4 (210×297 mm)</p>
+        <p class="prod-price">Prix : 20 €</p>
       </div>
-  </main>
+      <div class="prod-actions">
+        oeuvres/illustration.htmlDétails</a>
+        index.html#contactAcheter</a>
+        #img-illus1🔍 Zoom</a>
+      </div>
+    </article>
+
+    <!-- Produit 3 -->
+    <article class="produit">
+      #img-illus2images/Illustration2.jpg" 
+             alt="Illustration variation — impression A4" 
+             loading="lazy" decoding="async" width="900" height="1200">
+      <div class="prod-info">
+        <h3 class="prod-title">Illustration — Variation</h3>
+        <p class="prod-format">Format : A4 (210×297 mm)</p>
+        <p class="prod-price">Prix : 20 €</p>
+      </div>
+      <div class="prod-actions">
+        oeuvres/illustration-variation.htmlDétails</a>
+        index.html#contactAcheter</a>
+        #img-illus2🔍 Zoom</a>
+      </div>
+    </article>
+  </div>
+
+  <!-- Lightbox (CSS-only) pour la Boutique -->
+  <div id="img-pending" class="lightbox" role="dialog" aria-modal="true" aria-label="Work in progress — Zoom">
+    #</a>
+    images/Pending.png
+    #✕</a>
+    oeuvres/pending.html📄 Fiche de l’œuvre</a>
+  </div>
+
+  <div id="img-illus1" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Couleur — Zoom">
+    #</a>
+    images/Illustration.jpg
+    #✕</a>
+    oeuvres/illustration.html📄 Fiche de l’œuvre</a>
+  </div>
+
+  <div id="img-illus2" class="lightbox" role="dialog" aria-modal="true" aria-label="Illustration — Variation — Zoom">
+    #</a>
+    images/Illustration2.jpg
+    #✕</a>
+    oeuvres/illustration-variation.html📄 Fiche de l’œuvre</a>
+  </div>
+
+</main>
 
   <footer>
     <p>&copy; 2025 Simon - Tous droits réservés</p>
@@ -46,6 +110,7 @@
 </body>
 
 </html>
+
 
 
 
