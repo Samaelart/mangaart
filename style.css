@@ -343,4 +343,56 @@ footer {
   }
 }
 
+/* ==== Correctifs BOUTIQUE : taille des produits et images ==== */
+/* Si possible, ajoute <main class="boutique"> dans boutique.html (voir plus bas).
+   Sinon, remplace `.boutique` par `main` pour forcer sur la page (moins propre). */
+
+.boutique .produits {
+  /* Grille fluide et centrée */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Carte produit : largeur maîtrisée et responsive */
+.boutique .produit {
+  flex: 1 1 240px;                 /* base 240px, s’étire si place dispo */
+  max-width: 280px;                /* évite de devenir trop large */
+  min-width: 220px;                /* évite d’être trop étroite */
+  background-color: #fff;
+  border: 2px solid var(--red);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.boutique .produit:hover { transform: translateY(-5px); }
+
+/* Image produit : ne dépasse jamais la carte et garde ses proportions */
+.boutique .produit img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;            /* conserve le ratio */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;       /* si tu utilises aspect-ratio (optionnel) */
+}
+
+/* Optionnel : si tu veux des vignettes harmonisées en hauteur
+.boutique .produit img {
+  aspect-ratio: 4 / 3;     /* ou 1/1 pour carré, 3/4 pour vertical */
+  object-fit: cover;
+}
+*/
+
+/* Petits écrans : cartes un peu plus larges pour respirer */
+@media (max-width: 480px) {
+  .boutique .produit { max-width: 340px; }
+}
 
