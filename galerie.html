@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Galerie - MangaArt</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-  <div class="navbar">
-    <div class="logo">Samael Art</div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul class="menu">
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="galerie.html">Galerie</a></li>
-  <li><a href="boutique.html">Boutique</a></li>
-  <li><a href="blog.html">Blog</a></li>
-  <li><a href="apropos.html">A propos de moi</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-  </div>
-</header>
+  <header>
+    <div class="navbar">
+      <div class="logo">Samael Art</div>
+
+      <!-- Menu burger (CSS only) -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active" href="galerie.html">Galerie</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="apropos.html">A propos de moi</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
   <main>
     <h2>Galerie de dessins</h2>
+
+    <!-- Galerie : simple, responsive, performante -->
     <div class="galerie">
-      <img src="images/Pending.png" alt="Dessin manga 1">
-      <img src="images/Illustration.jpg" alt="Dessin manga 2">
-      <img src="images/Illustration2.jpg" alt="Dessin manga 3">
+      <figure class="art">
+        <img
+          src="images/Pending.png"
+          alt="Illustration en cours - style manga"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Work in progress — 2025</figcaption>
+      </figure>
+
+      <figure class="art">
+        <img
+          src="images/Illustration.jpg"
+          alt="Illustration couleur personnage manga"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Illustration — Couleur</figcaption>
+      </figure>
+
+      <figure class="art">
+        <img
+          src="images/Illustration2.jpg"
+          alt="Illustration manga alternative"
+          loading="lazy"
+          decoding="async"
+        />
+        <figcaption>Illustration — Variation</figcaption>
+      </figure>
     </div>
   </main>
 
@@ -36,5 +70,5 @@
     <p>&copy; 2025 Simon - Tous droits réservés</p>
   </footer>
 </body>
-
 </html>
+
