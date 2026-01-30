@@ -573,6 +573,12 @@ main.work {
   color: var(--text);
 }
 
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;     /* réduis la hauteur globale */
+  object-fit: cover;     /* garde un rendu propre */
+}
 
 
 
