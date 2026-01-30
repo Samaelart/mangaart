@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avancée du Manga – MangaArt</title>
+
+  <!-- Police et CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <meta name="description" content="Suivi de production du manga : scénario, storyboard, encrage et finalisation par chapitre." />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="index.html">
+        <!-- Si tu utilises un logo image : décommente la ligne suivante -->
+        <!-- <img src="images/avatar.png" alt="Logo Samael Art" /> -->
+        Samael Art
+      </a>
+
+      <!-- Burger menu (mobile) -->
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-icon" for="menu-toggle">☰</label>
+
+      <ul class="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Lien actif vers la page progression -->
+        <li><a href="manga.html" class="active">Mon manga</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <section class="manga-progress shonen">
+      <h2>Avancée du Manga</h2>
+
+      <!-- Exemple Chapitre 1 -->
+      <div class="chapter">
+        <h3>Chapitre 1 — L'Éveil</h3>
+        <div class="bar"><span style="width: 80%;"></span></div>
+        <p>Encrage en cours — 80%</p>
+      </div>
+
+      <!-- Exemple Chapitre 2 -->
+      <div class="chapter">
+        <h3>Chapitre 2 — La Chute</h3>
+        <div class="bar"><span style="width: 100%;"></span></div>
+        <p>Terminé ✔</p>
+      </div>
+
+      <!-- Exemple Chapitre 3 -->
+      <div class="chapter">
+        <h3>Chapitre 3 — La Chasse</h3>
+        <div class="bar"><span style="width: 40%;"></span></div>
+        <p>Storyboard — 40%</p>
+      </div>
+
+      <!-- Tu peux dupliquer .chapter pour ajouter d'autres chapitres -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© Samael Art — Tous droits réservés</p>
+  </footer>
+</body>
+</html>
+``
