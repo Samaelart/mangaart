@@ -744,6 +744,10 @@ footer {
 }
 
 
+/* Réduction de largeur uniquement pour l'index (is-compact) */
+.manga-progress.shonen.is-compact {
+  max-width: 850px;    /* avant 1100px */
+
 
 
 
