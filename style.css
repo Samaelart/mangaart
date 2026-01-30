@@ -573,11 +573,18 @@ main.work {
   color: var(--text);
 }
 
-.hero-banner img {
+
+/* =========================
+   BANNIÈRE INDEX (réduction taille)
+   ========================= */
+.hero img {
   width: 100%;
   height: auto;
-  max-height: 380px;     /* réduis la hauteur globale */
-  object-fit: cover;     /* garde un rendu propre */
+  max-height: 360px;   /* réduit la hauteur */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* optionnel mais plus joli */
 }
 
 
