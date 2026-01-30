@@ -123,7 +123,7 @@ main {
 }
 
 main h2 {
-  font-family: 'Bangers', cursive';
+  font-family: 'Bangers', cursive;
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: var(--red);
   margin-bottom: 30px;
@@ -534,10 +534,15 @@ main.work {
   background: #000; /* évite le flash blanc pendant le chargement */
   box-shadow: var(--shadow);
 }
+
 .work-hero img {
   display: block;
   width: 100%;
   height: auto;
+  max-width: 850px;      /* Ajuste comme tu veux */
+  max-height: 90vh;      /* Ne prendra jamais toute la hauteur */
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 /* Encadré infos (métadonnées) */
@@ -567,5 +572,6 @@ main.work {
   margin-bottom: 8px;
   color: var(--text);
 }
+
 
 
