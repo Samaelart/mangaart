@@ -611,6 +611,77 @@ footer {
   transition: width 0.4s ease;
 }
 
+/* =========================================================
+   PROGRESSION MANGA — STYLE SHONEN (page manga.html)
+========================================================= */
+.manga-progress.shonen {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a0000, #3c0000);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.35);
+  border: 3px solid var(--red);
+}
+
+.manga-progress.shonen h2 {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  color: var(--red);
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 25px;
+}
+
+.manga-progress.shonen .chapter {
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border-left: 5px solid var(--red);
+  box-shadow: 0 0 10px rgba(255,0,0,0.2);
+}
+
+.manga-progress.shonen .chapter h3 {
+  font-family: 'Bangers', cursive;
+  color: var(--red);
+  margin: 0 0 10px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.manga-progress.shonen .chapter p {
+  color: #fff;
+  font-weight: 600;
+  margin: 8px 0 0;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Barre de progression */
+.manga-progress.shonen .bar {
+  width: 100%;
+  background: #111;
+  border: 2px solid var(--red);
+  height: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.manga-progress.shonen .bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff0000, #ff6a6a);
+  box-shadow: 0 0 12px #ff0000;
+  transition: width 0.4s ease;
+}
+
+/* Responsive léger */
+@media (max-width: 480px) {
+  .manga-progress.shonen { padding: 22px; margin: 36px auto; }
+  .manga-progress.shonen .chapter { padding: 12px 10px; }
+  .manga-progress.shonen .bar { height: 14px; }
+}
 
 
 
