@@ -25,68 +25,6 @@ body {
   margin: 0;
 }
 
-/* =========================
-   HERO BANNER (INDEX)
-========================= */
-.hero-banner {
-  position: relative;
-  text-align: center;
-  padding: 20px 10px;
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-  max-height: 320px;     /* <<< Réduction réelle de la bannière */
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-}
-
-/* Titre sur la bannière */
-.banner-title {
-  position: absolute;
-  bottom: 55px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Bangers', cursive;
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
-  color: #fff;
-  text-shadow: 2px 2px 5px #000;
-  margin: 0;
-}
-
-/* Slogan sous le titre */
-.slogan {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
-  color: #fff;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px #000;
-  margin: 0;
-}
-
-/* ===== Version Mobile ===== */
-@media (max-width: 480px) {
-  .banner-image {
-    max-height: 220px;   /* Bannière plus petite sur mobile */
-  }
-
-  .banner-title {
-    bottom: 45px;
-  }
-
-  .slogan {
-    bottom: 14px;
-  }
-}
-
-
 /* =========================================================
    HEADER & NAVBAR
 ========================================================= */
@@ -169,6 +107,67 @@ header {
 
   .menu-icon {
     display: block;
+  }
+}
+
+/* =========================
+   HERO BANNER (INDEX)
+========================= */
+.hero-banner {
+  position: relative;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  max-height: 320px;     /* <<< Réduction réelle de la bannière */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+/* Titre sur la bannière */
+.banner-title {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  margin: 0;
+}
+
+/* Slogan sous le titre */
+.slogan {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000;
+  margin: 0;
+}
+
+/* ===== Version Mobile ===== */
+@media (max-width: 480px) {
+  .banner-image {
+    max-height: 220px;   /* Bannière plus petite sur mobile */
+  }
+
+  .banner-title {
+    bottom: 45px;
+  }
+
+  .slogan {
+    bottom: 14px;
   }
 }
 
@@ -634,6 +633,7 @@ main.work {
   margin-bottom: 8px;
   color: var(--text);
 }
+
 
 
 
