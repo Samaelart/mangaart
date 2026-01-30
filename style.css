@@ -48,7 +48,7 @@ header {
 
 .logo {
   font-family: 'Bangers', cursive;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);  /* taille responsive réduite */
   color: #fff;
   text-shadow: 1px 1px var(--red);
   white-space: nowrap;
@@ -572,6 +572,7 @@ main.work {
   margin-bottom: 8px;
   color: var(--text);
 }
+
 
 
 
