@@ -25,6 +25,7 @@ body {
   margin: 0;
 }
 
+
 /* =========================================================
    HEADER & NAVBAR
 ========================================================= */
@@ -110,6 +111,7 @@ header {
   }
 }
 
+
 /* =========================
    HERO BANNER (INDEX)
 ========================= */
@@ -171,6 +173,27 @@ header {
   }
 }
 
+
+/* =========================
+   AVATAR (section présentation)
+========================= */
+.presentation .avatar {
+  width: 140px;        /* Taille réduite propre */
+  height: auto;
+  border-radius: 50%;  /* Avatar rond */
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* optionnel mais stylé */
+}
+
+/* Version mobile */
+@media (max-width: 480px) {
+  .presentation .avatar {
+    width: 110px;
+  }
+}
+
+
 /* =========================================================
    MAIN
 ========================================================= */
@@ -190,6 +213,7 @@ main h2 {
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
+
 
 /* =========================================================
    GALERIE (version corrigée et unique)
@@ -241,6 +265,7 @@ main h2 {
   transform: translateY(0);
 }
 
+
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -253,6 +278,7 @@ footer {
   border-top: 5px solid var(--red);
 }
 
+
 /* =========================================================
    ACCESSIBILITÉ
 ========================================================= */
@@ -262,6 +288,7 @@ footer {
   border-radius: 3px;
 }
 
+
 /* =========================================================
    SMALL DEVICES FIXES
 ========================================================= */
@@ -270,6 +297,7 @@ footer {
     padding: 30px 16px;
   }
 }
+
 
 /* =========================================================
    BOUTONS FIGCAPTION (Zoom + Fiche)
@@ -304,6 +332,7 @@ footer {
   transform: translateY(-1px);
   filter: brightness(1.06);
 }
+
 
 /* =========================================================
    LIGHTBOX CSS-ONLY
@@ -528,6 +557,7 @@ footer {
 
 .prod-actions a:hover { filter: brightness(1.06); transform: translateY(-1px); }
 
+
 /* =========================
    Fiches œuvres (pending.html, etc.)
    ========================= */
@@ -633,6 +663,7 @@ main.work {
   margin-bottom: 8px;
   color: var(--text);
 }
+
 
 
 
