@@ -665,6 +665,47 @@ main.work {
 }
 
 
+/* =========================
+   AVATAR — SECTION PRÉSENTATION
+   (réduit et centré proprement)
+========================= */
+section.presentation img.avatar {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  section.presentation img.avatar {
+    width: 110px;
+  }
+}
+
+/* =========================
+   AVATAR EN LOGO DANS LA NAVBAR
+   (si tu utilises <img> comme logo)
+========================= */
+.navbar .logo img,
+header .logo img {
+  width: 44px;              /* ajuste la taille du logo image */
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Option : réduire légèrement l’espace vertical du header
+   quand on utilise un logo image */
+.navbar {
+  padding: 10px 20px;       /* avant : 15px 30px */
+}
+
+
 
 
 
