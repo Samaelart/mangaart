@@ -219,7 +219,8 @@ main h2 {
   background: #000;
 }
 
-.galerie img {
+.galerie img,
+.art img {
   display: block;
   width: 100%;
   height: auto;
